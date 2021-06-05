@@ -426,6 +426,47 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <form class="modal-form" action="#" name="modal-form">
+                <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="modal-form-field">Имя
+                    <span class="modal-form-input-wrapper">
+                        <input class="modal-form-input" type="text" name="user-name" 
+                            minlength="2" placeholder=" " required>
+                        <svg class="modal-form-icon" height="18" width="18">
+                            <use href="./images/icons.svg#icon-input-person"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input class="modal-form-input" type="tel" name="user-phone" 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="067-000-00-00" placeholder=" " required>
+                        <svg class="modal-form-icon" height="18" width="18">
+                            <use href="./images/icons.svg#icon-input-phone"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">Почта
+                    <span class="modal-form-input-wrapper">
+                        <input class="modal-form-input" type="email" name="user-email" 
+                            placeholder=" " required>
+                        <svg class="modal-form-icon" height="18" width="18">
+                            <use href="./images/icons.svg#icon-input-email"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">Комментарий
+                    <textarea class="modal-form-message" name="user-messege" placeholder="Введите текст"></textarea>
+                </label>
+                <input class="modal-form-checkbox visually-hidden" type="checkbox" name="user-policy" 
+                    id="checkbox-policy" required>
+                <label class="modal-form-field modal-form-checkbox-policy" for="checkbox-policy">Соглашаюсь с рассылкой и принимаю <a 
+                    class="modal-form-policy-link" href="">Условия договора</a>
+                </label>
+
+                <button class="modal-form-btn" type="submit">Отправить</button>
+            
+            </form>
         </div>
     </div>
 
