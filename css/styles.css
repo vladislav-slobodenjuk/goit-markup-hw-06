@@ -481,10 +481,12 @@ body {
   align-items: baseline;
 }
 
+/*== address block ==*/
 .address-block {
   display: flex;
   flex-direction: column;
   margin-right: 70px;
+  min-width: 230px;
 }
 
 .address {
@@ -522,8 +524,9 @@ body {
   color: var(--brand-color);
 }
 
+/* == social block ==*/
 .footer-social-block {
-  margin-right: 92px;
+  margin-right: 94px;
 }
 
 .footer-social-title {
@@ -563,6 +566,11 @@ body {
   animation: heartBeat-test 1000ms var(--timing-function) 0ms;
 }
 
+/* == email block == */
+.footer-input-wrapper {
+  display: flex;
+}
+
 .footer-contact-input {
   width: 358px;
   height: 50px;
@@ -572,6 +580,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+
   margin-right: 12px;
   padding: 15px 16px;
 }
@@ -589,6 +598,10 @@ body {
 }
 
 .footer-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   padding: 10px 28px;
   font-weight: 700;
   font-size: 16px;
@@ -601,6 +614,8 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  transition: background-color var(--trans-duration) var(--timing-function);
 }
 
 .footer-form-btn:hover,
@@ -608,11 +623,9 @@ body {
   background-color: var(--mdl-btn-hover-bckgrnd);
 }
 
-.footer-icon-wrapper {
-  display: inline-block;
-  vertical-align: middle;
+.footer-form-icon {
+  margin-left: 10px;
 }
-
 /* ========= END FOOTER =====================================*/
 
 /* ========= PORTFOLIO =======================================*/
