@@ -786,14 +786,14 @@ body {
   cursor: pointer;
 
   transform: rotate(0deg);
-  transition: transform var(--trans-duration) var(--timing-function);
+  transition: transform 250ms var(--timing-function);
   fill: currentColor;
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   color: var(--brand-color);
-  transform: rotate(45deg);
+  transform: rotate(90deg);
 }
 
 /* ======== MODAL FORM ======== */
@@ -903,11 +903,11 @@ body {
 }
 
 .modal-form-checkbox-policy::before {
+  content: '';
   display: inline-block;
   vertical-align: middle;
-  content: '';
   width: 16px;
-  height: 16px;
+  height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 2px;
   margin-right: 8px;
@@ -916,6 +916,7 @@ body {
 
 .modal-form-checkbox:checked + .modal-form-checkbox-policy::before {
   background-image: url(../images/icon-check.svg);
+  background-size: cover;
   background-repeat: no-repeat;
   border-color: transparent;
   background-origin: border-box;
